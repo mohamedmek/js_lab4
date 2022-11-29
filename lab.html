@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <title>OOP</title>
 </head>
 <body>
-    
+    <script>
+        class Person{
+            constructor(fname,sleep){
+                this.fname = fname;
+                this.sleep=sleep;
+                this.Eat = Eat;
+                this.Buy = Buy;
+
+            }
+            sleep(hours){
+                if(hours==7){
+                    this.sleep ='happy'
+                }
+                else if(hours<7){
+                    this.sleep ='tired'
+                }
+                else if(hours>7){
+                    this.sleep ='lazy'
+                }
+                else{
+                    return "wrong input"
+                }
+                return this.sleep
+
+            }
+            Eat(meals){
+                if(meals==3){
+                    this.Eat ='100 health rate'
+                }
+                else if(meals==2){
+                    this.Eat ='75 health rate'
+                }
+                else if(meals==1){
+                    this.Eat ='50 health rate'
+                }
+                else{
+                    return "wrong input"
+                }
+                return this.Eat
+            }
+            Buy(item){
+                if(item==1){
+                    this.Buy ='decrees Money 10LE'
+                }
+                else{
+                    return "wrong input"
+                }
+                return this.Buy
+            }
+        } 
+        
+        // let Person{
+        //     init(fname,sleep){
+        //         this.fname = fname;
+        //         this.sleep=sleep;
+        //         this.Eat = Eat;
+        //         this.Buy = Buy;
+
+        //     },
+        //     sleep(hours){
+        //         if(hours==7){
+        //             this.sleep ='happy'
+        //         }
+        //         else if(hours<7){
+        //             this.sleep ='tired'
+        //         }
+        //         else if(hours>7){
+        //             this.sleep ='lazy'
+        //         }
+        //         else{
+        //             return "wrong input"
+        //         }
+        //         return this.sleep
+
+        //     }
+        //     Eat(meals){
+        //         if(meals==3){
+        //             this.Eat ='100 health rate'
+        //         }
+        //         else if(meals==2){
+        //             this.Eat ='75 health rate'
+        //         }
+        //         else if(meals==1){
+        //             this.Eat ='50 health rate'
+        //         }
+        //         else{
+        //             return "wrong input"
+        //         }
+        //         return this.Eat
+        //     }
+        //     Buy(item){
+        //         if(item==1){
+        //             this.Buy ='decrees Money 10LE'
+        //         }
+        //         else{
+        //             return "wrong input"
+        //         }
+        //         return this.Buy
+        //     }
+        // }.
+    </script>
 </body>
 </html>
