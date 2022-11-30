@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+<body>
+    <button onclick="run()">3bbaas</button>
+    <script>
+        class user{
+          
+            constructor(name,money){
+                this.n = name;
+                this.money = money;
+            }
+            sleep(hours){
+                if(hours==7){
+                    this.mode ='happy'
+                }
+                else if(hours<7){
+                    this.mode ='tired'
+                }
+                else if(hours>7){
+                    this.mode ='lazy'
+                }
+                else{
+                    return "wrong input"
+                }
+                return this.mode
+            }
+            Eat(meals){
+                if(meals == 1){
+                    return "your health rate is 50"
+                }
+                else if(meals == 2){
+                    return "your health rate is 75"
+                }
+                else if(meals == 3){
+                    return "your health rate is 100"
+                }
+            }
+            Buy(items){
+                 this.money -= items*10; 
+                return this.money;
+            }
+            
+      
+        }
+        function run() {
+            let username = prompt("input your name: ");
+            alert("Welcome "+username);
+            let m = prompt("How much money do you have?");
+
+            let object = new user(username,m);
+            let i = prompt("How many items did you bought?");
+            object.Buy(i);
+            alert("your money after buying is : "+object.money);
+            let h = prompt("How many hours did you sleep?");
+            alert("you are "+ object.sleep(h));
+            alert("thanks!");
+
+        }
+
+
+        let khamis = new user('khamis',100);
+
+        console.log(khamis.money);
+        console.log(khamis.sleep(7));
+        console.log(khamis.Eat(3));
+        console.log(khamis.n);
+        console.log(khamis.Buy(3));
+
+
+        
+        
+        
+    </script>
+</body>
+</html>
